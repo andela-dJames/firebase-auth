@@ -4,7 +4,7 @@ ext{
     bintrayRepo = 'maven'
     bintrayName = 'firebase-auth'
 
-    publishedGroupId = 'com.daniel.firebasehelper'
+    publishedGroupId = 'com.danijax.firebasehelper'
     libraryName = 'Firebasehelper'
     artifact = 'firebase-auth'
 

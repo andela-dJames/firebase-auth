@@ -1,4 +1,4 @@
-package com.danijax.firebase_auth.auth;
+package com.danijax.firebasehelper.auth;
 
 /**
  * Created by danieljames on 2/25/16.

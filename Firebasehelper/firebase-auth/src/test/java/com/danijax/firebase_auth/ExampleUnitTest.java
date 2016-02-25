@@ -1,4 +1,4 @@
-package com.danijax.firebase_auth;
+package com.danijax.firebasehelper;
 
 import org.junit.Test;
 

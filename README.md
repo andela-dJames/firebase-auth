@@ -15,13 +15,13 @@ Get the dependency via maven using
 </dependency> 
 ```
 
- from gradle using 
+ Or from gradle using 
 
 ```groovy
 compile 'com.danijax.firebasehelper:firebase-auth:0.1.3'
 ```
 
-from Ivy using 
+Or from Ivy using 
 
 ```xml
 <dependency org='com.danijax.firebasehelper' name='firebase-auth' rev='0.1.3'>
@@ -40,12 +40,28 @@ android{
   }
   ```
   
+  set the FirebaseAndroidContext in your Application `onCreate` method 
+  
+  ```java
+  public class baseApp extends Application {
+  protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+         Firebase.setAndroidContext(this);
+        }
+  }
+  
+  ```
 ## Usage
 
 To sign up you need to call the `signUpWithEmail` method
 
 
 ```java
+private FirebaseEmailAuth emailAuth;
+protected static final String FIREBASE_URL = "[YOUR_APP_FIREBASE_URL]"
+
+emailAuth = new FirebaseEmailAuth(this, FIREBSE_URL);
+...
 public void signUp(View view) {
         String email = emailText.getText().toString().trim();
         String password = passwordText.getText().toString().trim();
